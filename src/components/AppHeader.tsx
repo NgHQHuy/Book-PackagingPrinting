@@ -50,29 +50,29 @@ export default function AppHeader() {
       <div className="flex-grow h-full items-center justify-start flex-nowrap text-sm font-[family-name:var(--font-geist-mono)] hidden md:flex">
         <Link
           href="/about"
-          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] hover:shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
+          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
             !pathName.startsWith("/about") ? "shadow-none" : ""
           }`}
         >
-          <span>About us</span>
+          <span className="p-1 group-hover:bg-slate-100 group-hover:rounded-md">About us</span>
         </Link>
         <div className="mx-2">|</div>
         <Link
           href="/book"
-          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] hover:shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
+          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
             !pathName.startsWith("/book") ? "shadow-none" : ""
           }`}
         >
-          <span>Book</span>
+          <span className="p-1 group-hover:bg-slate-100 group-hover:rounded-md">Book</span>
         </Link>
         <div className="mx-2">|</div>
         <Link
           href="/packaging"
-          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] hover:shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
+          className={`group h-full flex items-center cursor-pointer shadow-[inset_0_-2px_0_0_rgba(0,0,0,1)] ${
             !pathName.startsWith("/packaging") ? "shadow-none" : ""
           }`}
         >
-          <span>Packaging</span>
+          <span className="p-1 group-hover:bg-slate-100 group-hover:rounded-md">Packaging</span>
         </Link>
       </div>
       {user.role === "guest" && (
